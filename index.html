@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>poke chooser</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="EXTENDER">
+    <div class="PADDER-CENTER">
+        <ul>
+            <!-- SHOW THE NAME AND A BUTTON IN THE MIDDLE OF THE PAGE -->
+            <li class="list"><h1 id="pokemon"></h1></li>
+            <li class="list"><center><input type="submit" onclick="starters()" value="New Starter"></center></li>
+        </ul>
+    </div>
+        
+</div>
+
+<!-- LIST OF NAMES AND HOW MANY TIME THEY HAVE BEEN PICKED -->
+Chikorita: <span id="chikorita">0</span><br>
+Cyndaquil: <span id="cyndaquil">0</span><br>
+Totodile: <span id="totodile">0</span><br>
+Treecko: <span id="treecko">0</span><br>
+Torchic: <span id="torchic">0</span><br>
+Mudkip: <span id="mudkip">0</span><br>
+Turtwig: <span id="turtwig">0</span><br>
+Chimchar: <span id="chimchar">0</span><br>
+Piplup: <span id="piplup">0</span><br>
+Snivy: <span id="snivy">0</span><br>
+Tepig: <span id="tepig">0</span><br>
+Oshawott: <span id="oshawott">0</span><br>
+Chespin: <span id="chespin">0</span><br>
+Fennekin: <span id="fennekin">0</span><br>
+Froakie: <span id="froakie">0</span><br>
+Bulbasaur: <span id="bulbasaur">0</span><br>
+Charmander: <span id="charmander">0</span><br>
+Pikachu: <span id="pikachu">0</span><br>
+Squirtle: <span id="squirtle">0</span><br>
+Riolu: <span id="riolu">0</span>
+
+<script>
+//----- SET STANDARD VALUE -----
+    var chikorita = 0,
+        cyndaquil = 0,
+        totodile = 0,
+        treecko = 0,
+        torchic = 0,
+        mudkip = 0,
+        turtwig = 0,
+        chimchar = 0,
+        piplup = 0,
+        snivy = 0,
+        tepig = 0,
+        oshawott = 0,
+        chespin = 0,
+        fennekin = 0,
+        froakie = 0,
+        bulbasaur = 0,
+        charmander = 0,
+        pikachu = 0,
+        squirtle = 0,
+        riolu = 0;
+
+//----- CREATE FUNCTION -----
+function starters(){
+
+//----- CALL VARIABLES -----
+        chikorita;
+        cyndaquil;
+        totodile;
+        treecko;
+        torchic;
+        mudkip;
+        turtwig;
+        chimchar;
+        piplup;
+        snivy;
+        tepig;
+        oshawott;
+        chespin;
+        fennekin;
+        froakie;
+        bulbasaur;
+        charmander;
+        pikachu;
+        squirtle;
+        riolu;
+
+    //----- CREATE ARRAY WITH NAMES -----
+    var poke = ['Chikorita', 'Cyndaquil', 'Totodile', 'Treecko', 'Torchic', 'Mudkip', 'Turtwig', 'Chimchar', 'Piplup', 'Snivy',
+                'Tepig', 'Oshawott', 'Chespin', 'Fennekin', 'Froakie', 'Bulbasaur', 'Charmander', 'Pikachu', 'Squirtle', 'Riolu'];
+
+    //----- PICK A RANDOM NAME -----
+    var random = poke[Math.floor(Math.random() * poke.length)];
+
+    //----- SHOW RANDOM NAME -----
+    document.getElementById("pokemon").innerHTML = random;
+
+    //----- CHECK WHAT NAME HAS BEEN SHOWN -----
+    switch(random){
+        case 'Chikorita':
+            //----- UPDATE THE TIMES PICKED BY ONE HIGHER AND REMOVE THE PREVIOUS NUMBER-----
+            chikorita = chikorita+1;
+            console.log(chikorita);
+            document.getElementById("chikorita").innerHTML = '';
+            document.getElementById("chikorita").innerHTML = chikorita.toString();
+        break;
+        case 'Cyndaquil':
+            cyndaquil = cyndaquil+1;
+            console.log(cyndaquil);
+            document.getElementById("cyndaquil").innerHTML = '';
+            document.getElementById("cyndaquil").innerHTML = cyndaquil.toString();
+        break;
+        case 'Totodile':
+            totodile = totodile+1;
+            console.log(totodile);
+            document.getElementById("totodile").innerHTML = '';
+            document.getElementById("totodile").innerHTML = totodile.toString();
+        break;
+        case 'Treecko':
+            treecko = treecko+1;
+            console.log(treecko);
+            document.getElementById("treecko").innerHTML = '';
+            document.getElementById("treecko").innerHTML = treecko.toString();
+        break;
+        case 'Torchic':
+            torchic = torchic+1;
+            console.log(torchic);
+            document.getElementById("torchic").innerHTML = '';
+            document.getElementById("torchic").innerHTML = torchic.toString();
+        break;
+        case 'Mudkip':
+            mudkip = mudkip+1;
+            console.log(mudkip);
+            document.getElementById("mudkip").innerHTML = '';
+            document.getElementById("mudkip").innerHTML = mudkip.toString();
+        break;
+        case 'Turtwig':
+            turtwig = turtwig+1;
+            console.log(turtwig);
+            document.getElementById("turtwig").innerHTML = '';
+            document.getElementById("turtwig").innerHTML = turtwig.toString();
+        break;
+        case 'Chimchar':
+            chimchar = chimchar+1;
+            console.log(chimchar);
+            document.getElementById("chimchar").innerHTML = '';
+            document.getElementById("chimchar").innerHTML = chimchar.toString();
+        break;
+        case 'Piplup':
+            piplup = piplup+1;
+            console.log(piplup);
+            document.getElementById("piplup").innerHTML = '';
+            document.getElementById("piplup").innerHTML = piplup.toString();
+        break;
+        case 'Snivy':
+            snivy = snivy+1;
+            console.log(snivy);
+            document.getElementById("snivy").innerHTML = '';
+            document.getElementById("snivy").innerHTML = snivy.toString();
+        break;
+        case 'Tepig':
+            tepig = tepig+1;
+            console.log(tepig);
+            document.getElementById("tepig").innerHTML = '';
+            document.getElementById("tepig").innerHTML = tepig.toString();
+        break;
+        case 'Oshawott':
+            oshawott = oshawott+1;
+            console.log(oshawott);
+            document.getElementById("oshawott").innerHTML = '';
+            document.getElementById("oshawott").innerHTML = oshawott.toString();
+        break;
+        case 'Chespin':
+            chespin = chespin+1;
+            console.log(chespin);
+            document.getElementById("chespin").innerHTML = '';
+            document.getElementById("chespin").innerHTML = chespin.toString();
+        break;
+        case 'Fennekin':
+            fennekin = fennekin+1;
+            console.log(fennekin);
+            document.getElementById("fennekin").innerHTML = '';
+            document.getElementById("fennekin").innerHTML = fennekin.toString();
+        break;
+        case 'Froakie':
+            froakie = froakie+1;
+            console.log(froakie);
+            document.getElementById("froakie").innerHTML = '';
+            document.getElementById("froakie").innerHTML = froakie.toString();
+        break;
+        case 'Bulbasaur':
+            bulbasaur = bulbasaur+1;
+            console.log(bulbasaur);
+            document.getElementById("bulbasaur").innerHTML = '';
+            document.getElementById("bulbasaur").innerHTML = bulbasaur.toString();
+        break;
+        case 'Charmander':
+            charmander = charmander+1;
+            console.log(charmander);
+            document.getElementById("charmander").innerHTML = '';
+            document.getElementById("charmander").innerHTML = charmander.toString();
+        break;
+        case 'Pikachu':
+            pikachu = pikachu+1;
+            console.log(pikachu);
+            document.getElementById("pikachu").innerHTML = '';
+            document.getElementById("pikachu").innerHTML = pikachu.toString();
+        break;
+        case 'Squirtle':
+            squirtle = squirtle+1;
+            console.log(squirtle);
+            document.getElementById("squirtle").innerHTML = '';
+            document.getElementById("squirtle").innerHTML = squirtle.toString();
+        break;
+        case 'Riolu':
+            riolu = riolu+1;
+            console.log(riolu);
+            document.getElementById("riolu").innerHTML = '';
+            document.getElementById("riolu").innerHTML = riolu.toString();
+        break;
+    }
+}
+
+//----- CALL FUNCTION WHEN PAGE IS LOADED -----
+starters();
+</script>
+
+</body>
+</html>
